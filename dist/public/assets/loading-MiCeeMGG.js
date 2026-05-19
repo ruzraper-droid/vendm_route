@@ -1,0 +1,1 @@
+import{b7 as e,a5 as s}from"./vendor-react-C8Ul1zVi.js";function r({className:t}){return e.jsxs("div",{className:`flex flex-col items-center justify-center gap-3 ${t??""}`,children:[e.jsx(s,{className:"size-8 animate-spin text-muted-foreground"}),e.jsx("p",{className:"text-sm text-muted-foreground",children:"Loading"})]})}export{r as L};

@@ -1,0 +1,1 @@
+const e="fcalendar_route_colors",o=["#374151","#7c3aed","#0891b2","#16a34a","#dc2626","#d97706"];function a(){try{const t=localStorage.getItem(e);if(t)return JSON.parse(t)}catch{}return o}export{o as D,a as g};

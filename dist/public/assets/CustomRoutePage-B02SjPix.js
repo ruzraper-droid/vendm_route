@@ -1,0 +1,1 @@
+import{b7 as t}from"./vendor-react-C8Ul1zVi.js";import{RouteList as o}from"./RouteList-DrS-9Ssz.js";import"./vendor-BFcwix52.js";import"./index-BRS7SW9K.js";import"./vendor-qr-scanner-Gucd5yad.js";import"./loading-MiCeeMGG.js";import"./route-colors-JNWfJzHW.js";function s(){return t.jsx(o,{variant:"playground"})}export{s as CustomRoutePage};

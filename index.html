@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/FamilyMart.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#161b2a" />
+    <meta name="description" content="Professional route planning and calendar management application for delivery services" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Dbrutals" />
+    <meta name="application-name" content="Dbrutals" />
+    <meta name="msapplication-TileColor" content="#161b2a" />
+    <meta name="msapplication-TileImage" content="/FamilyMart.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="dns-prefetch" href="//tile.openstreetmap.org" />
+    <link rel="dns-prefetch" href="//mt0.google.com" />
+    <link rel="dns-prefetch" href="//mt1.google.com" />
+    <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin />
+    <link rel="preconnect" href="https://mt0.google.com" crossorigin />
+    <link rel="apple-touch-icon" href="/FamilyMart.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/FamilyMart.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/FamilyMart.png" />
+    <title>Dbrutals - Route &amp; Calendar Management</title>
+    <script>
+      (function() {
+        const mode = localStorage.getItem('colorMode') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const isDark = mode === 'dark';
+        document.documentElement.classList.toggle('dark', isDark);
+        const tabColor = isDark ? '#161b2a' : '#e4ecf3';
+        const themeMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeMeta) themeMeta.setAttribute('content', tabColor);
+        const tileMeta = document.querySelector('meta[name="msapplication-TileColor"]');
+        if (tileMeta) tileMeta.setAttribute('content', tabColor);
+        const statusMeta = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
+        if (statusMeta) statusMeta.setAttribute('content', isDark ? 'black-translucent' : 'default');
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
